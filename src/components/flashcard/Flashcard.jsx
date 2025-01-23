@@ -18,8 +18,8 @@ function Flashcard({ flashcard }) {
     //return each flashcard as a div for now
     return (
         <>
-            <div className={classes.flashcard} onClick={handleClick}>
-             {isFlipped ? flashcard.answer : flashcard.question}
+            <div className={`${classes.flashcard} ${isFlipped ? classes.flipped : classes.unFlipped}`} onClick={handleClick}>
+                {isFlipped ? flashcard.answer : flashcard.question}
             </div>
         </>
     )

@@ -1,17 +1,18 @@
 import Flashcard from "../flashcard/Flashcard.jsx";
 import { useState } from "react";
+import classes from "./Container.module.css";
 
-function Container () {
-    const [values, setValues]= useState(Array(3)).fill([
-     {question: "Gato", answer: "Cat", id: 1 },
-     {question: "Caballo", answer: "Horse", id: 2 },
-     {question: "Perro", answer: "Dog", id: 3 }
+function Container() {
+    const [values, setValues] = useState(Array(3)).fill([
+        { question: "Gato", answer: "Cat", id: 1 },
+        { question: "Caballo", answer: "Horse", id: 2 },
+        { question: "Perro", answer: "Dog", id: 3 }
     ]);
 
 
 
     return (
-        <div>
+        <div className={classes.container}>
             {values.map((flashcard, index) => (
                 <Flashcard key={flashcard.id} flashcard={flashcard} />
             ))}
