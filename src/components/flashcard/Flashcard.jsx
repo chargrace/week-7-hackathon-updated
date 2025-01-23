@@ -4,7 +4,7 @@ import classes from './Flashcard.module.css';
 //Question / answer from State array is the prop for each flashcard
 
 //Create flashcard React component
-function Flashcard(onClick) {
+function Flashcard({ flashcard }) {
     //add state for flip and init as unflipped. Unflipped = false, displays question.
     const [isFlipped, setIsFlipped] = useState(false)
     // //create a handleClick function
@@ -18,8 +18,8 @@ function Flashcard(onClick) {
     //return each flashcard as a div for now
     return (
         <>
-            <div className={classes.flashcard}>
-                <button onClick={handleClick}>{isFlipped ? "answer" : "question"}</button>
+            <div className={classes.flashcard} onClick={handleClick}>
+             {isFlipped ? flashcard.answer : flashcard.question}
             </div>
         </>
     )
