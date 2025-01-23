@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import classes from './Flashcard.module.css';
+import ReactCardFlip from 'react-card-flip';
 
 //Question / answer from State array is the prop for each flashcard
 

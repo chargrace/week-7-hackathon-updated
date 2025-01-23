@@ -1,4 +1,5 @@
 import Flashcard from "../flashcard/Flashcard.jsx";
+import FlashcardAnimated from "../flashcard/FlashcardAnimated.jsx";
 import { useState } from "react";
 import classes from "./Container.module.css";
 
@@ -14,7 +15,7 @@ function Container() {
     return (
         <div className={classes.container}>
             {values.map((flashcard, index) => (
-                <Flashcard key={flashcard.id} flashcard={flashcard} />
+                <FlashcardAnimated key={flashcard.id} flashcard={flashcard} />
             ))}
         </div>
     )
