@@ -1,0 +1,24 @@
+.header {
+   display: flex;
+   flex-direction: column;
+   background-color: aqua;
+   width:1000px;
+   height:200px;
+   border-width: medium;
+   border-color: brown;
+}
+
+.heading {
+    font-size:large;
+    color: black;
+}
+
+.subheading {
+    font-size:medium;
+    color: grey;
+}
+
+.react {
+    display: flex;
+    justify-content: center;
+}
