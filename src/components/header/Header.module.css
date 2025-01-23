@@ -1,21 +1,28 @@
 .header {
-   display: flex;
-   flex-direction: column;
-   background-color: aqua;
-   width:1000px;
-   height:200px;
-   border-width: medium;
-   border-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #232731;
+    width: auto;
+    height: 150px;
+    /* border-width: medium;
+    border-color: brown; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 .heading {
-    font-size:large;
-    color: black;
+    font-size: x-large;
+    font-family: "Didact Gothic";
+    color: white;
 }
 
 .subheading {
-    font-size:medium;
-    color: grey;
+    font-size: medium;
+    font-family: "Didact Gothic";
+    color: white;
 }
 
 .react {
