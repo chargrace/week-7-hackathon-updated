@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import classes from './Flashcard.module.css';
 
 //Question / answer from State array is the prop for each flashcard
 
@@ -17,9 +18,9 @@ function Flashcard(onClick) {
     //return each flashcard as a div for now
     return (
         <>
-        <div>
-            <button onClick={handleClick}>{isFlipped ? "answer" : "question"}</button>
-        </div>
+            <div className={classes.flashcard}>
+                <button onClick={handleClick}>{isFlipped ? "answer" : "question"}</button>
+            </div>
         </>
     )
 };
