@@ -19,6 +19,7 @@ function FlashcardAnimated({ flashcard }) {
                 className={classes.unFlipped}
                 onClick={handleClick}
             >
+                <img src='images/unflipped-emoji.png' alt="Thinking emoji" />
                 {flashcard.question}
             </div>
 
@@ -26,6 +27,8 @@ function FlashcardAnimated({ flashcard }) {
                 className={classes.flipped}
                 onClick={handleClick}
             >
+
+            <img src='images/flipped-emoji.png' alt="Mind-blown emoji" />
                 {flashcard.answer}
             </div>
         </ReactCardFlip>
