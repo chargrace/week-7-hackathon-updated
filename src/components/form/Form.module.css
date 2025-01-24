@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #232731;
@@ -12,4 +12,18 @@
     font-family: "Didact Gothic";
     color: white;
     border-radius: 5px;
+}
+
+.button {
+    background-color: #06b1df;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.input {
+    padding:5px;
+    margin: 5px;
 }
