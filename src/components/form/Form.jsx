@@ -8,8 +8,8 @@ function Form() {
 
     return (
         <div className={classes.form}>
-            <input className={classes.input} name="Question" placeHolder="Add a New Question" />
-            <input className={classes.input} name="Answer" placeHolder="Add the New Answer" />
+            <input className={classes.input} name="Question" placeholder="Add a New Question" />
+            <input className={classes.input} name="Answer" placeholder="Add the New Answer" />
             <button className={classes.button}>Submit</button>
         </div>
     )
