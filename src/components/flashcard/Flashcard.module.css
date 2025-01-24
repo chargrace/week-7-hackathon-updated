@@ -52,7 +52,7 @@ footer, .container, main, section {
     }
 }
 
-/* phones */
+
 @media (max-width: 480px) {
     .unFlipped, .flipped {
         width: 90%;
@@ -60,4 +60,4 @@ footer, .container, main, section {
         min-width: 200px;
         height: 200px;
     }
-}
+} 
