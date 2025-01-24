@@ -11,6 +11,12 @@ function Container() {
         { question: "Perro", answer: "Dog", id: 3 }
     ]);
 
+    //mvp 3 plan
+    //take user input
+    //slice values array(copies it)
+    //push user input to values array
+    //in return, create new flashcard within function onChange on Form component
+
 
 
     return (
@@ -27,6 +33,3 @@ function Container() {
 
 export default Container;
 
-{/* <Flashcard value={values[0]}/>
-<Flashcard value={values[1]}/>
-<Flashcard value={values[2]}/> */}
