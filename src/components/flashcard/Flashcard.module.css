@@ -43,6 +43,20 @@ footer, .container, main, section {
     background-color: #06b1df;
 }
 
+.buttonUnFlipped{
+    background-color:#323949 ;
+    display:flex;
+    justify-content: end;
+    align-self: flex-end;
+}
+
+.buttonFlipped {
+    background-color: #06b1df;
+    display:flex;
+    justify-content: end;
+    align-self: flex-end;
+}
+
 @media (max-width: 768px) {
     .unFlipped, .flipped {
         width: 80%;

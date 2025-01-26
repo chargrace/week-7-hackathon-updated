@@ -2,11 +2,17 @@ import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import classes from './Flashcard.module.css';
 
-function FlashcardAnimated({ flashcard }) {
+function FlashcardAnimated({ flashcard, handleFlashcardDeletion}) {
     const [isFlipped, setIsFlipped] = useState(false);
+
+
 
     function handleClick() {
         setIsFlipped(!isFlipped);
+    }
+
+    function handleDeletion () {
+        handleFlashcardDeletion(flashcard.id)
     }
 
     return (
@@ -19,6 +25,7 @@ function FlashcardAnimated({ flashcard }) {
                 className={classes.unFlipped}
                 onClick={handleClick}
             >
+                <button className={classes.buttonUnFlipped} onClick={handleDeletion}>❌</button>
                 <img src='images/unflipped-emoji.png' alt="Thinking emoji" />
                 {flashcard.question}
             </div>
@@ -28,6 +35,7 @@ function FlashcardAnimated({ flashcard }) {
                 onClick={handleClick}
             >
 
+            <button className={classes.buttonFlipped} onClick={handleDeletion}>❌</button>
             <img src='images/flipped-emoji.png' alt="Mind-blown emoji" />
                 {flashcard.answer}
             </div>
